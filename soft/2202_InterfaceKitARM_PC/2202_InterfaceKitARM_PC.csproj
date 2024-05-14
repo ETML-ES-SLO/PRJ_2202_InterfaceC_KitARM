@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C32A1AEE-BAA7-4991-84E5-9D4C698602B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_2202_InterfaceKitARM_PC</RootNamespace>
+    <AssemblyName>2202_InterfaceKitARM_PC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_allumee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_eteinte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_release.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_Neutral.png" />
+    <None Include="Resources\USB_Disconnected.png" />
+    <None Include="Resources\USB_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\97.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\116.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASCII_LCD\126.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

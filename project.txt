@@ -1,0 +1,11 @@
+nom du projet : Interface Kit ARM 
+no de projet  : 2202
+date          : 26.06.2023 
+
+explicatif du projet:
+---------------------
+
+L'objectif du projet est de développer une application en C# qui permettra d'établir une communication bidirectionnelle avec un kit ARM par le biais d’un câble USB.
+Celle-ci offrira une interface conviviale pour les étudiants qui permettra d'interagir avec tous les périphériques embarqués sur le kit, comme des LEDS ou des boutons.
+De plus, l'application devra offrir la possibilité de contrôler des cartes annexes, comme des moteurs et autres composants externes.
+Pour le reste du projet, les détails et spécifications sont laissés à libre appréciation.
