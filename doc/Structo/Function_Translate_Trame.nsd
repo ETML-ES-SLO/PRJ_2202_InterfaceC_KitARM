@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.30-10" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" author="sampitton" created="2024-05-27" changedby="sampitton" changed="2024-05-28" origin="Structorizer 3.30-10" text="&#34;Function_Translate_Trame&#34;" comment="" color="ffffff" type="sub" style="nice">
+	<children>
+		<call text="&#34;récuperation de la CMD dans le buffer UART dans commande &#34;" comment="" color="80ff80" disabled="0"></call>
+		<case text="&#34;(Commande)&#34;,&#34;GESTION_LED_ON&#34;,&#34;GESTION_LED_OFF&#34;,&#34;GESTION_LCD&#34;,&#34;GESTION_BTN&#34;,&#34;GESTION_ADC&#34;,&#34;GESTION_TEMP&#34;,&#34;default&#34;" comment="" color="ffffff" disabled="0">
+			<qCase>
+				<call text="&#34;recuperation du numerot dela LED dans Led&#34;" comment="" color="80ff80" disabled="0"></call>
+				<case text="&#34;(led)&#34;,&#34;LED0&#34;,&#34;LED1&#34;,&#34;LED2&#34;,&#34;LED4&#34;,&#34;default&#34;" comment="" color="ffffff" disabled="0">
+					<qCase>
+						<call text="&#34;Alume la LED 0&#34;" comment="" color="ffffff" disabled="0"></call>
+					</qCase>
+					<qCase>
+						<call text="&#34;Alume la LED 1&#34;" comment="" color="ffffff" disabled="0"></call>
+					</qCase>
+					<qCase>
+						<call text="&#34;Alume la LED 2&#34;" comment="" color="ffffff" disabled="0"></call>
+					</qCase>
+					<qCase>
+						<call text="&#34;Alume la LED 3&#34;" comment="" color="ffffff" disabled="0"></call>
+					</qCase>
+					<qCase>
+						<instruction text="" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qCase>
+				</case>
+			</qCase>
+			<qCase>
+				<call text="&#34;recuperation du numerot dela LED dans Led&#34;" comment="" color="80ff80" disabled="0"></call>
+				<case text="&#34;(led)&#34;,&#34;LED0&#34;,&#34;LED1&#34;,&#34;LED2&#34;,&#34;LED4&#34;,&#34;default&#34;" comment="" color="ffffff" disabled="0">
+					<qCase>
+						<instruction text="&#34;Eteint la LED 0 &#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Eteint la LED 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Eteint la LED 2&#34;,&#34; &#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Eteint la LED 3&#34;,&#34; &#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qCase>
+				</case>
+			</qCase>
+			<qCase>
+				<call text="&#34;recuperation des caratère dans le buffer de l UART &#34;" comment="&#34;&#34;" color="80ff80" disabled="0"></call>
+				<call text="&#34;écrit sur le LCD les caratéres reçu&#34;" comment="" color="ffffff" disabled="0"></call>
+			</qCase>
+			<qCase>
+				<call text="&#34;lecture de l'état des boutons &#34;" comment="" color="ffffff" disabled="0"></call>
+				<call text="&#34;encode la trame des boutons&#34;" comment="" color="ffffff" disabled="0"></call>
+				<call text="&#34;envoi la trame des boutons&#34;" comment="" color="ff8080" disabled="0"></call>
+			</qCase>
+			<qCase>
+				<call text="&#34;lecture de la valeur de l'ADC&#34;" comment="" color="ffffff" disabled="0"></call>
+				<call text="&#34;encode la trame de l'ADC&#34;" comment="" color="ffffff" disabled="0"></call>
+				<call text="&#34;envoi la trame de l'ADC&#34;" comment="" color="ff8080" disabled="0"></call>
+			</qCase>
+			<qCase>
+				<call text="&#34;lecture de l'etat du capteur de temperature&#34;" comment="" color="ffffff" disabled="0"></call>
+				<call text="&#34;encode la trame pour la temperature&#34;" comment="" color="ffffff" disabled="0"></call>
+				<call text="&#34;envoi la trame de temperature&#34;" comment="" color="ff8080" disabled="0"></call>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;traitement de l'erreur &#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+		</case>
+	</children>
+</root>
